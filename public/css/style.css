@@ -1,2 +1,40 @@
+.centered_Box {
+  display: inline-table;
+  position: relative;
+  padding: 5% 10%;
+  width: 100%;
+  background-color: #339966 !important; }
+  @media (max-width: 600px) {
+    .centered_Box {
+      padding: 3% 5%; } }
+  @media (max-width: 1024px) {
+    .centered_Box {
+      padding: 4% 10%; } }
+  .centered_Box:hover {
+    border: 5px solid #ff6666 !important;
+    background-color: #42c081 !important; }
+
+.fullWidth_Box {
+  display: inline-table;
+  position: relative;
+  width: 100%;
+  background-color: #9966ff !important; }
+  .fullWidth_Box:hover {
+    border: 5px solid #c8c637 !important;
+    background-color: #b294ee !important; }
+
 body {
   background-color: orange; }
+
+.jumbotron.jumbotron-fluid {
+  text-align: center;
+  height: 350px; }
+
+.acordion_menus li {
+  font-size: 16px; }
+
+.acordion_menus button {
+  font-size: 22px; }
+
+.acordion_menus .badge {
+  width: 35px; }

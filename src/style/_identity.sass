@@ -28,29 +28,28 @@ $font-text: 'Roboto', sans-serif
 // CUSTOM CLASSES
 .centered_Box
 	display: inline-table
-		position: relative
-		padding: 5% 10%
-		@include phone
-			padding: 3% 5%
-		@include tablet
-			padding: 4% 10%
-		width: 100%
-		// Visual rules to make sure that boxes behave correctly, use it for testing
-		// background-color: #339966 !important
-		// &:hover
-		//     border: 5px solid #ff6666 !important
-		//     background-color: #42c081 !important
+	position: relative
+	padding: 5% 10%
+	@include phone
+		padding: 3% 5%
+	@include tablet
+		padding: 4% 10%
+	width: 100%
+	// Visual rules to make sure that boxes behave correctly, use it for testing
+	background-color: #339966 !important
+	&:hover
+		border: 5px solid #ff6666 !important
+		background-color: #42c081 !important
 
 .fullWidth_Box
 	display: inline-table
-		position: relative
-		width: 100%
-		// Visual rules to make sure that banners behave correctly, use it for testing
-		// background-color: #9966ff !important
-		// &:hover
-		//     border: 5px solid #c8c637 !important
-		//     background-color: #b294ee !important
+	position: relative
+	width: 100%
+	// Visual rules to make sure that banners behave correctly, use it for testing
+	background-color: #9966ff !important
+	&:hover
+		border: 5px solid #c8c637 !important
+		background-color: #b294ee !important
 
 body
 	background-color: orange
-	
