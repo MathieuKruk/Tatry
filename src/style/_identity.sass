@@ -17,16 +17,62 @@ $main-color: #8BAAB7
 $sec-color: #E8EEF1
 $third-color: #212121
 // Text colors, three variations
-$main-text-color: #212121
-$sec-text-color: #999999
+$main-text-color: #0f0b0b
+$sec-text-color: #1b1b1b
 $third-text-color: #BBBBBB
 
 // FONTS
 $font-headers: 'Roboto', sans-serif
 $font-text: 'Roboto', sans-serif
 
+// FONTS-SIZES
+h1, h2, h3, h4, h5, h6, nav.menu
+    font-family: $font-headers
+    color: $main-text-color
+    font-weight: 500
+h1
+    font-size: 64px
+    @include phone
+        font-size: 32px
+h2
+    font-size: 42px
+    @include phone
+        font-size: 28px
+h3
+    font-size: 36px
+    @include phone
+        font-size: 24px
+h4
+    font-size: 32px
+    @include phone
+        font-size: 20px
+h5
+    font-size: 24px
+    @include phone
+        font-size: 18px
+h6
+    font-size: 20px
+    @include phone
+        font-size: 16px
+
+nav.menu ul li a
+    font-size: 20px
+    color: #000
+
+p, ul
+    font-size: 16px
+    font-family: $font-text
+    color: $sec-text-color
+    font-weight: 300
+    @include phone
+        font-size: 16px
+
+label
+    font-family: $font-text
+    font-weight: 300
+
 // CUSTOM CLASSES
-.centered_Box
+.centered_box
 	display: inline-table
 	position: relative
 	padding: 5% 10%
