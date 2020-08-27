@@ -1,16 +1,22 @@
-.acordion_menus
+.centered_Box.acordion_menus
 	h2 Menus list:
 	#accordion
 		.card
 			.card-header#headingOne
 				h5.mb-0
-					button.btn.btn-link(data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Menu n°1:
+					button.btn.btn-link(data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne") [Menu n°1] Mountain's menu: Zakopiec
 					.badge.badge-info 19€
 			.collapse#collapseOne(aria-labelledby="headingOne" data-parent="#accordion")
 				.card-body
-					.illustration
-						img(src="", alt="")
+					.illustration.col-12
+						img.col-4(src="/images/food/dish1.jpg", alt="")
+						img.col-4(src="/images/food/dish1.jpg", alt="")
+						img.col-4(src="/images/food/dish1.jpg", alt="")
 					h3 Description:
+						ul
+							li Entry:
+							li Main Course:
+							li Dessert:
 					h3 Ingredients:
 						ul.list-group.list-group-flush
 							li.list-group-item Cras justo odio
@@ -29,13 +35,19 @@
 		.card
 			.card-header#headingTwo
 				h5.mb-0
-					button.btn.btn-link(data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") Menu n°2:
+					button.btn.btn-link(data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") [Menu n°2] City-dweller's menu: Warszawka
 					.badge.badge-info 12€
 			.collapse#collapseTwo(aria-labelledby="headingTwo" data-parent="#accordion")
 				.card-body
-					.illustration
-						img(src="", alt="")
+					.illustration.col-12
+						img.col-4(src="/images/food/dish1.jpg", alt="")
+						img.col-4(src="/images/food/dish1.jpg", alt="")
+						img.col-4(src="/images/food/dish1.jpg", alt="")
 					h3 Description:
+						ul
+							li Entry:
+							li Main Course:
+							li Dessert:
 					h3 Ingredients:
 						ul.list-group.list-group-flush
 							li.list-group-item Cras justo odio
@@ -54,13 +66,50 @@
 		.card
 			.card-header#headingThree
 				h5.mb-0
-					button.btn.btn-link(data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree") Menu n°3:
+					button.btn.btn-link(data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree") [Menu n°3] Tourist's menu: Krakowiak
 					.badge.badge-info 24€
 			.collapse#collapseThree(aria-labelledby="headingThree" data-parent="#accordion")
 				.card-body
-					.illustration
-						img(src="", alt="")
+					.illustration.col-12
+						img.col-4(src="/images/food/dish1.jpg", alt="")
+						img.col-4(src="/images/food/dish1.jpg", alt="")
+						img.col-4(src="/images/food/dish1.jpg", alt="")
 					h3 Description:
+						ul
+							li Entry:
+							li Main Course:
+							li Dessert:
+					h3 Ingredients:
+						ul.list-group.list-group-flush
+							li.list-group-item Cras justo odio
+							li.list-group-item Cras justo odio
+							li.list-group-item Cras justo odio
+							li.list-group-item Cras justo odio
+							li.list-group-item Cras justo odio
+					h3 Allergens
+						ul.list-group.list-group-flush
+							li.list-group-item Cras justo odio
+							li.list-group-item Cras justo odio
+							li.list-group-item Cras justo odio
+							li.list-group-item Cras justo odio
+							li.list-group-item Cras justo odio
+
+		.card
+			.card-header#headingFour
+				h5.mb-0
+					button.btn.btn-link(data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour") [Menu n°4] Ecologist's menu: Mazury
+					.badge.badge-info 24€
+			.collapse#collapseFour(aria-labelledby="headingFour" data-parent="#accordion")
+				.card-body
+					.illustration.col-12
+						img.col-4(src="/images/food/dish1.jpg", alt="")
+						img.col-4(src="/images/food/dish1.jpg", alt="")
+						img.col-4(src="/images/food/dish1.jpg", alt="")
+					h3 Description:
+						ul
+							li Entry:
+							li Main Course:
+							li Dessert:
 					h3 Ingredients:
 						ul.list-group.list-group-flush
 							li.list-group-item Cras justo odio
