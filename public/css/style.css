@@ -98,6 +98,9 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: fill; }
+  @media (max-width: 600px) {
+    .jumbotron.jumbotron-fluid {
+      height: 150px; } }
 
 nav {
   display: flex; }
