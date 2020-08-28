@@ -46,7 +46,7 @@ nav.menu ul li a {
 p, ul {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  color: #1b1b1b;
+  color: #1f1f1f;
   font-weight: 300; }
   @media (max-width: 600px) {
     p, ul {
@@ -81,12 +81,41 @@ label {
     border: 5px solid #c8c637 !important;
     background-color: #b294ee !important; }
 
-body {
-  background-color: orange; }
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; }
 
 .jumbotron.jumbotron-fluid {
   text-align: center;
-  height: 350px; }
+  height: 350px;
+  background-image: url("../images/website/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill; }
+
+nav {
+  display: flex; }
+  nav .collapse {
+    justify-content: end !important; }
+    nav .collapse ul li a.nav-link {
+      color: #BBBBBB !important;
+      text-align: right; }
+
+footer {
+  padding: 2% 2%;
+  background-color: #0e1113; }
+  footer a.address {
+    color: #BBBBBB; }
+  footer li a {
+    color: #BBBBBB; }
+
+.list_allergens h2 {
+  text-align: center; }
 
 .acordion_menus h3 {
   margin-bottom: 2%; }
