@@ -61,16 +61,13 @@ label {
   position: relative;
   padding: 5% 10%;
   width: 100%;
-  background-color: #339966 !important; }
+  background-color: #84b8e298 !important; }
   @media (max-width: 600px) {
     .centered_box {
       padding: 3% 5%; } }
   @media (max-width: 1024px) {
     .centered_box {
       padding: 4% 10%; } }
-  .centered_box:hover {
-    border: 5px solid #ff6666 !important;
-    background-color: #42c081 !important; }
 
 .fullWidth_Box {
   display: inline-table;
@@ -88,7 +85,8 @@ label {
 body, html {
   height: 100%;
   min-height: 100vh;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-image: url("../images/website/bg-pattern.png"); }
 
 .row {
   margin-bottom: 2%; }
@@ -152,7 +150,16 @@ footer {
         .acordion_menus .illustration .row figure img {
           height: 70%; } }
     .acordion_menus .illustration .row figure figcaption {
+      margin-top: -2%;
       margin-left: 3%; }
 
 .acordion_menus .collapse {
   background-color: whitesmoke; }
+
+.map .responsive-map {
+  background-color: red;
+  width: 100%;
+  height: 350px; }
+  .map .responsive-map iframe {
+    width: 100%;
+    height: 100%; }
