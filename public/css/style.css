@@ -90,6 +90,9 @@ body, html {
   min-height: 100vh;
   overflow-x: hidden; }
 
+.row {
+  margin-bottom: 2%; }
+
 .jumbotron.jumbotron-fluid {
   text-align: center;
   height: 350px;
