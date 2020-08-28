@@ -122,7 +122,8 @@ footer {
   margin-bottom: 2%; }
 
 .acordion_menus button {
-  font-size: 22px; }
+  font-size: 22px;
+  color: #0f0b0b; }
 
 .acordion_menus .badge {
   width: 45px; }
