@@ -129,12 +129,30 @@ footer {
 .acordion_menus .badge {
   width: 45px; }
 
+@media (max-width: 600px) {
+  .acordion_menus .card-header {
+    text-align: center; } }
+
 .acordion_menus .illustration {
   margin-bottom: 2%;
-  height: 350px; }
-  .acordion_menus .illustration img {
-    height: 100%;
-    border-radius: 6%; }
+  height: auto; }
+  .acordion_menus .illustration .row figure {
+    height: 350px; }
+    @media (max-width: 600px) {
+      .acordion_menus .illustration .row figure {
+        height: 210px;
+        text-align: center; } }
+    .acordion_menus .illustration .row figure img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 6%;
+      margin-bottom: 2%; }
+      @media (max-width: 600px) {
+        .acordion_menus .illustration .row figure img {
+          height: 70%; } }
+    .acordion_menus .illustration .row figure figcaption {
+      margin-left: 3%; }
 
 .acordion_menus .collapse {
   background-color: whitesmoke; }

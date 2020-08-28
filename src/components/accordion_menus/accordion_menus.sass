@@ -5,11 +5,27 @@
 		font-size: 22px
 	.badge
 		width: 45px
+	.card-header
+		@include phone
+			text-align: center
 	.illustration
 		margin-bottom: 2%
-		height: 350px
-		img
-			height: 100%
-			border-radius: 6%
+		height: auto
+		.row
+			figure
+				height: 350px
+				@include phone
+					height: 210px
+					text-align: center
+				img
+					object-fit: cover
+					width: 100%
+					height: 100%
+					@include phone
+						height: 70%
+					border-radius: 6%
+					margin-bottom: 2%
+				figcaption
+					margin-left: 3%
 	.collapse
 		background-color: whitesmoke
