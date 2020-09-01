@@ -14,16 +14,16 @@ $phone-width: 600px
 // COLORS
 // Main colors, three variations
 $main-color: #0e1113
-$sec-color: #E8EEF1
-$third-color: #212121
+$sec-color: #78878B
+$third-color: #725953
 // Text colors, three variations
 $main-text-color: #0f0b0b
-$sec-text-color: #1f1f1f
+$sec-text-color: #5a5a5a
 $third-text-color: #BBBBBB
 
 // FONTS
-$font-headers: 'Roboto', sans-serif
-$font-text: 'Roboto', sans-serif
+$font-headers: 'Lobster', cursive
+$font-text: 'Exo 2', sans-serif;
 
 // FONTS-SIZES
 h1, h2, h3, h4, h5, h6, nav.menu
@@ -60,9 +60,9 @@ nav.menu ul li a
     color: #000
 
 p, ul
-    font-size: 16px
+    font-size: 18px
     font-family: $font-text
-    color: $sec-text-color
+    color: $main-text-color
     font-weight: 300
     @include phone
         font-size: 16px
@@ -82,7 +82,8 @@ label
 		padding: 4% 10%
 	width: 100%
 	// Visual rules to make sure that boxes behave correctly, use it for testing
-	background-color: #84b8e298 !important
+	background-color: #78878bcb !important
+	border-radius: 8px 8px 8px 8px
 	// &:hover
 	// 	border: 5px solid #ff6666 !important
 	// 	background-color: #aff3ff !important
