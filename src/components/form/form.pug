@@ -40,27 +40,27 @@
 			.col-12.d-flex.justify-content-center
 				button.btn.btn-primary(type="submit") Send
 
-script.
-	$('form').on('submit', (e) => {
-		e.preventDefault();
+//- script.
+//- 	$('form').on('submit', (e) => {
+//- 		e.preventDefault();
 
-		const firstname = $('#inputFirstName').val().trim();
-		const lastname = $('#inputLastName').val().trim();
-		const email = $('#inputEmail').val().trim();
-		const tel = $('#inputTel').val().trim();
-		const subject = $('#inputSubject').val().trim();
-		const message = $('#inputMessage').val().trim();
+//- 		const firstname = $('#inputFirstName').val().trim();
+//- 		const lastname = $('#inputLastName').val().trim();
+//- 		const email = $('#inputEmail').val().trim();
+//- 		const tel = $('#inputTel').val().trim();
+//- 		const subject = $('#inputSubject').val().trim();
+//- 		const message = $('#inputMessage').val().trim();
 
-		const data = {
-			firstname,
-			lastname,
-			email,
-			tel,
-			subject,
-			message
-		}
+//- 		const data = {
+//- 			firstname,
+//- 			lastname,
+//- 			email,
+//- 			tel,
+//- 			subject,
+//- 			message
+//- 		}
 
-		$.post('/contact', data, function(){
-			console.log('Server received the data');
-		});
-	});
+//- 		$.post('/contact', data, function(){
+//- 			console.log('Server received the data');
+//- 		});
+//- 	});
