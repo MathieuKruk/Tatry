@@ -278,3 +278,26 @@ footer {
 .schedule table {
   margin-top: 4%;
   border-radius: 8px 8px 8px 8px; }
+
+.chatbot {
+  position: fixed;
+  bottom: 0;
+  right: 16px; }
+  @media (max-width: 600px) {
+    .chatbot {
+      right: 0px; } }
+  .chatbot iframe {
+    height: 430px;
+    width: 350px; }
+    @media (max-width: 600px) {
+      .chatbot iframe {
+        width: 100%; } }
+  .chatbot button {
+    width: 100px;
+    margin-left: 247px;
+    background-color: #725953;
+    border: 1px solid #0e1113; }
+    .chatbot button:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid #725953; }
