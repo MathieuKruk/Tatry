@@ -3,7 +3,7 @@ const app = express();
 const fs = require('fs');
 
 const websiteName = 'Tatry Restaurant';
-const port = process.env.PORT || 3050;
+const port = process.env.PORT || 8080;
 const host = 'localhost';
 
 // Rendering template
