@@ -18,10 +18,10 @@
 
 			.form-group.col-md-6
 				label(for="inputTel") Telephone
-				input(type="tel" class="form-control" id="inputTel" placeholder="Your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}")
+				input(type="tel" class="form-control" id="inputTel" placeholder="Your phone number")
 
 			.form-group.col-md-4
-				label(for="inputState") Subject
+				label(for="inputSubject") Subject
 				select#inputState.form-control
 					option(selected) Reservation
 					option Complaint
@@ -39,3 +39,28 @@
 		.form-row
 			.col-12.d-flex.justify-content-center
 				button.btn.btn-primary(type="submit") Send
+
+script.
+	$('form').on('submit', (e) => {
+		e.preventDefault();
+
+		const firstname = $('#inputFirstName').val().trim();
+		const lastname = $('#inputLastName').val().trim();
+		const email = $('#inputEmail').val().trim();
+		const tel = $('#inputTel').val().trim();
+		const subject = $('#inputSubject').val().trim();
+		const message = $('#inputMessage').val().trim();
+
+		const data = {
+			firstname,
+			lastname,
+			email,
+			tel,
+			subject,
+			message
+		}
+
+		$.post('/contact', data, function(){
+			console.log('Server received the data');
+		});
+	});

@@ -12,13 +12,19 @@ app.set('views', __dirname + '/src');
 // Folder hosting all static files
 app.use(express.static(__dirname + '/public'));
 
-app.get('/member/:name/planet/:home', (req, res) => {
-	const memberDetails = {
-		member: req.params.name,
-		planet: req.params.home
-	}
-	res.render('guardian', memberDetails);
-});
+// app.get('/member/:name/planet/:home', (req, res) => {
+// 	const memberDetails = {
+// 		member: req.params.name,
+// 		planet: req.params.home
+// 	}
+// 	res.render('guardian', memberDetails);
+// });
+
+// DATA PARSING
+app.use(express.urlencoded({
+	extended: false
+}));
+app.use(express.json());
 
 // ROUTING
 // Landing page
@@ -55,6 +61,12 @@ app.get('/about', function(req, res) {
 app.get('/contact', function(req, res) {
     res.render('pages/contact');
     console.log('DEV-Message: Contact page has correclty loaded')
+});
+
+// Contact page
+app.post('/contact', function(req, res) {
+	console.log('Data: ', req.body)
+    res.json({ message: 'Message received!'})
 });
 
 app.get('*', (req, res, next) => {
