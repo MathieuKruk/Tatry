@@ -3,7 +3,7 @@ const app = express();
 const fs = require('fs');
 
 const websiteName = 'Tatry Restaurant';
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 const host = 'localhost';
 
 // Rendering template
@@ -62,6 +62,6 @@ app.get('*', (req, res, next) => {
 	next();
 });
 
-app.listen(port, host, () => {
-	console.log(`DEV-Message: ${websiteName} server started at ${host} port ${port}`);
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
