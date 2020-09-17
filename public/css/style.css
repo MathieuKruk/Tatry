@@ -116,6 +116,9 @@ nav {
 footer {
   padding: 2% 2%;
   background-color: #0e1113; }
+  @media (max-width: 600px) {
+    footer {
+      padding: 5% 5%; } }
   footer a.address {
     color: #BBBBBB; }
   footer ul {
@@ -125,7 +128,8 @@ footer {
     footer li a {
       color: #BBBBBB; }
   footer p.signature {
-    color: white; }
+    color: white;
+    margin-left: 6px; }
   footer a:hover, footer span:hover {
     color: white; }
 
@@ -213,6 +217,9 @@ footer {
 .article h3, .article h4 {
   text-decoration: underline; }
 
+.article h4 {
+  margin-bottom: 3%; }
+
 .article img {
   height: 400px;
   width: 600px;
@@ -220,7 +227,7 @@ footer {
   @media (max-width: 600px) {
     .article img {
       height: 180px;
-      width: 260px; } }
+      width: 240px; } }
 
 .article a {
   color: white; }

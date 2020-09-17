@@ -1,32 +1,32 @@
+//#############################################################################################//
+// GLOBAL CONST
 const express = require('express');
 const app = express();
 const fs = require('fs');
 
 const websiteName = 'Tatry Restaurant';
 const PORT = process.env.PORT || 3000;
-const host = 'localhost';
 
-// Rendering template
+
+//#############################################################################################//
+// RENDERING TEMPLATE
 app.set("view engine", "pug");
 app.set('views', __dirname + '/src');
 // Folder hosting all static files
 app.use(express.static(__dirname + '/public'));
 
-// app.get('/member/:name/planet/:home', (req, res) => {
-// 	const memberDetails = {
-// 		member: req.params.name,
-// 		planet: req.params.home
-// 	}
-// 	res.render('guardian', memberDetails);
-// });
 
+//#############################################################################################//
 // DATA PARSING
 app.use(express.urlencoded({
 	extended: false
 }));
 app.use(express.json());
 
+
+//#############################################################################################//
 // ROUTING
+
 // Landing page
 app.get('/', function(req, res) {
     res.render('pages/landing');
@@ -74,6 +74,9 @@ app.get('*', (req, res, next) => {
 	next();
 });
 
+
+//#############################################################################################//
+// APP LISTENING
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
