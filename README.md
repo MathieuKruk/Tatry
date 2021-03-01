@@ -17,10 +17,12 @@
 
 ## ◾ Features
 <ul>
-  <li>Homepage : contains a quick acces to the works sections, a covid-19 message and a caroussel with the latest achievements.</li>
-  <li>About us: contains a short message from the owner as well as some links to the fake partners.</li>
-  <li>Works: contains 4 sections wich regroup different achievements, each one has a description and a picture.</li>
-  <li>Contact: contains one map and a contact form.</li>
+  <li>Homepage : contains a short descriptive text and the latest article.</li>
+  <li>Food: contains a menu section, an article and a list of allergens.</li>
+  <li>News: contains the articles section.</li>
+  <li>Gallery: contains a collection of pictures.</li>
+  <li>About us: contains a short descriptive text, a map and a schedule with the oppening hours.</li>
+  <li>Contact: contains a contact form.</li>
 </ul>
 
 <hr>
@@ -32,14 +34,24 @@
   <img src="public/images/repository/homepage.png">
 </p>
 
+### Food
+<p align="center">
+  <img src="public/images/repository/food.png">
+</p>
+
+### News
+<p align="center">
+  <img src="public/images/repository/news.png">
+</p>
+
+### Gallery
+<p align="center">
+  <img src="public/images/repository/gallery.png">
+</p>
+
 ### About us
 <p align="center">
   <img src="public/images/repository/about.png">
-</p>
-
-### Works
-<p align="center">
-  <img src="public/images/repository/works.png">
 </p>
 
 ### Contact
