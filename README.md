@@ -80,5 +80,5 @@ OpenSource | Free
 </p>
 
 <p align="right">
-  <img src="https://media.giphy.com/media/2YOp8WqFDRHhe/giphy.gif" height="40%" width="25%">
+  <img src="https://media.giphy.com/media/55cUYFHVkzZQaZZO48/giphy.gif" height="40%" width="25%">
 </p>
